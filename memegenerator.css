@@ -1,0 +1,81 @@
+body{
+    background-color: burlywood;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:brown;
+    font-size: 100px;
+    margin-block: 0px;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:brown;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+form{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:chocolate;
+}
+
+.meme {
+    display: inline-block;
+    max-width: auto;
+    height: auto;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 0.08rem solid black;
+    position:relative;
+}
+
+.meme img{
+    max-height: 450px;
+    width: auto;
+    z-index:2
+    }
+
+.top_text{
+    position:absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    font-size: 35px;
+    color:#ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index:3
+}
+
+.bottom_text{
+    position:absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    bottom:10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    font-size: 35px;
+    color:#ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index:3
+}
+
+.meme button {
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 50%;
+    visibility:hidden;
+}
+
+.meme:hover button {
+    visibility: visible;
+}
+
